@@ -1,11 +1,11 @@
 # lolpowerrankings
 League of Legends Global Power Rankings Repository
 
-Description -
+# Description -
 
 In this project, I aimed to create a LoL Global Power Rankings for teams based on their match history according to an elo-based algorithm, taking into account strength of competition and recent performance.
 
-Game Data -
+# Game Data -
 
 The data used in this project was sourced from the Amazon X Riot Games Global Power Rankings Dataset hosted on Devpost. Data was pulled from AWS S3 Buckets found at
 
@@ -17,7 +17,7 @@ Initial Exploration of the available dataset revealed a large dataset that inclu
 
 My first steps in this project was to create a viable match history using the data available. This was rather difficult at first, as I was learning how to utilize AWS for the first time, as well as being unsure on where to begin my match history construction. After much struggling with the games data table, I ultimately decided that parsing the tournaments table for games played would yield the best results for an accurate match history. From the tournaments table, I parsed the table to construct a match history containing gameids, tournament information, as well as the obvious participating team information. This match history is the foundation of my project as I will be constructing an elo based algorithm focused on match history.
 
-Data Cleaning and Preparation -
+# Data Cleaning and Preparation -
 
 To manipulate the dataset, I downloaded the tournaments, teams, and leagues data from Amazon Athena. I also downloaded the tournaments.jsonl file from AWS during my exploration, and this would later come in handy when attempting to parse tournament information in my project.
 
@@ -27,14 +27,13 @@ Furthermore, I found that certain tournaments had stages that were oddly named, 
 
 The most difficult to resolve issue was reconstructing a match history from the tournaments table. Initially, I had begun by unnesting the tournaments table in Amazon Athena. This had proven more difficult for me to understand, so I looked to other alternatives to manipulate the data via Python. Initially, the tournaments.csv file would prove useful. However, parsing the game data from the nested tournament stages field would prove difficult. I would then parse the data from the tournaments.jsonl file, which would allow for easy parsing of the stages field. However, for some unknown reason this import would always import the wrong tournament and leagueids, they would be very slightly off(± 10) no matter if the data was read as a string or int. To rectify this, I ultimately decided to merge the tournaments.csv and tournaments.jsonl dataframe imports together to get the best of both worlds, the easy parsing from tournaments.jsonl and the correct ids from tournaments.csv.
 
-Elo Algorithm -
+# Elo Algorithm -
 
 Elo is a chess based matchmaking rating that is widely used around the world. I adopted an algorithm based on the in order to provide a team ranking.
 
 To begin, I seeded each team based on their home region and tier. While traditionally LoL esports lists teams in 2 tiers(Major and Minor Regions), I decided that it would be best to seed teams in 3 tiers given recent Worlds performances. This is to reflect the strength of competition within each region, as LPL and LCK teams tend to outperform LEC and LCS despite both pairings nominally being Major Regions.
 
-|
- | Tier 1 | Tier 2 | Tier 3 |
+| | Tier 1 | Tier 2 | Tier 3 |
 | --- | --- | --- | --- |
 | Regions | LPL, LCK | LEC, LCS | Rest |
 | Seed Elo | 1500 | 1250 | 1000 |
@@ -55,18 +54,18 @@ W = Match Result(0 - Loss, 1 - Win)
 
 WExpected = Expected Match Result
 
-- WExpected =
+- WExpected = 1/(1 + 10^(-(EBefore_TeamA - EBefore_TeamB)/600))
 
 R = Match Recency
 
-- R =
+- R = (1/2) ^ 2023 - year
 
-Considerations -
+# Considerations -
 
 A few conditions were included in this algorithm to address issues with regards to international and playoff play. Losses were additionally weighted according to the following table to prevent excessive elo losses from extra games played at a higher level of competition.
 
-|
- | Groups/Round Robin | Knockouts |
+
+| | Groups/Round Robin | Knockouts |
 | --- | --- | --- |
 | Regular Season | 1 | 0.5 |
 | MSI | 0.5 | 0.25 |
