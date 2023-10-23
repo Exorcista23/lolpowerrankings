@@ -1,0 +1,74 @@
+Ranking,name,acronym,slug,region,elo
+1,Gen.G,GEN,geng,LCK,1878
+2,Beijing JDG Intel Esports Club,JDG,jd-gaming,LPL,1850
+3,Bilibili Gaming Pingan Bank,BLG,bilibili-gaming,LPL,1773
+4,kt Rolster,KT,kt-rolster,LCK,1744
+5,T1,T1,t1,LCK,1712
+6,Suzhou LNG Esports,LNG,lng-esports,LPL,1709
+7,WeiboGaming FAW AUDI,WBG,weibo-gaming,LPL,1636
+8,Royal Never Give Up,RNG,royal-never-give-up,LPL,1606
+9,TOP ESPORTS,TES,top-esports,LPL,1586
+10,G2 Esports,G2,g2-esports,LEC,1585
+11,SHANGHAI EDWARD GAMING HYCAN,EDG,edward-gaming,LPL,1544
+12,Dplus Kia,DK,dwg-kia,LCK,1540
+13,Hanwha Life Esports,HLE,hanwha-life-esports,LCK,1531
+14,Cloud9,C9,cloud9,LCS,1521
+15,Invictus Gaming,IG,invictus-gaming,LPL,1510
+16,Seorabeol Gaming,SRB,seorabeol-gaming,LCK,1491
+17,FunPlus Phoenix,FPX,funplus-phoenix,LPL,1473
+18,Griffin,GFF,griffin,LCK,1455
+19,SeolHaeOne Prince,SP,apk-prince,LCK,1401
+20,NRG,NRG,nrg-esports,LCS,1399
+21,Golden Guardians,GG,golden-guardians,LCS,1388
+22,LGD GAMING,LGD,lgd-gaming,LPL,1382
+23,Team Liquid Honda,TL,team-liquid,LCS,1371
+24,MAD Lions,MAD,mad-lions,LEC,1368
+25,Evil Geniuses LG,EG,evil-geniuses,LCS,1337
+26,Liiv SANDBOX,LSB,liiv-sandbox,LCK,1320
+27,Fnatic,FNC,fnatic,LEC,1307
+28,DRX,DRX,drx,LCK,1306
+29,Team BDS,BDS,team-bds,LEC,1288
+30,KOI,KOI,rogue,LEC,1248
+31,OKSavingsBank BRION,BRO,fredit-brion,LCK,1234
+32,FlyQuest,FLY,flyquest,LCS,1226
+33,100 Thieves,100,100-thieves,LCS,1224
+34,Misfits Gaming,MSF,misfits-gaming,LEC,1221
+35,Team Heretics,TH,team-heretics-lec,LEC,1218
+36,Kwangdong Freecs,KDF,kwangdong-freecs,LCK,1216
+37,EXCEL,XL,excel,LEC,1209
+38,NongShim REDFORCE,NS,nongshim-redforce,LCK,1208
+39,TSM,TSM,tsm,LCS,1192
+40,SK Gaming,SK,sk-gaming,LEC,1185
+41,Schalke 04 Esports,S04,schalke-04,LEC,1184
+42,CLG,CLG,clg,LCS,1180
+43,Team Vitality,VIT,team-vitality,LEC,1167
+44,Astralis,AST,astralis,LEC,1127
+45,Dignitas,DIG,dignitas,LCS,1107
+46,PSG Talon,PSG,psg-talon,Wildcard,1100
+47,Unicorns of Love,UOL,unicorns-of-love,LCL,1053
+48,Saigon Buffalo Esports,SGB,saigon-buffalo-esports,Wildcard,1049
+49,One Breath Gaming,OBG,one-breath-gaming,LCL,1043
+50,LOUD,LLL,loud,Wildcard,1041
+51,DetonatioN FocusMe,DFM,detonation-focusme,Wildcard,1038
+52,Immortals Progressive,IMT,immortals-progressive,LCS,1038
+53,CrowCrowd Moscow,CC,crowcrowd-moscow,LCL,1025
+54,Beyond Gaming,BYG,mega-bank-beyond-gaming,Wildcard,1025
+55,PEACE,PCE,peace,Wildcard,1019
+56,Papara SuperMassive ,SUP,papara-supermassive-blaze,Wildcard,1011
+57,Gambit Esports,GMB,gambit-esports,LCL,1010
+58,RED Kalunga,RED,red-kalunga,Wildcard,1007
+59,Galatasaray Espor,GS,galatasaray-espor,Wildcard,1006
+60,Movistar R7,R7,rainbow7,Wildcard,1005
+61,Legacy Esports,LGC,legacy-esports,Wildcard,1003
+62,Black Star Gaming,BSGG,black-star-gaming,LCL,1001
+63,INTZ,ITZ,intz,Wildcard,1000
+64,Machi Esports,MCX,machi-esports,Wildcard,999
+65,Pentanet.GG,PGG,pentanetgg,Wildcard,995
+66,INFINITY,INF,infinity,Wildcard,994
+67,Team Aze,AZE,team-aze,Wildcard,991
+68,GAM Esports,GAM,gam-esports,Wildcard,990
+69,The Chiefs,CHF,the-chiefs,Wildcard,987
+70,Team Spirit,TSPT,team-spirit,LCL,972
+71,Dragon Army,DA,dragon-army,LCL,954
+72,Vega Squadron,VEG,vega-squadron,LCL,935
+73,CTRL PLAY Team,CPT,ctrl-play-team,LCL,920
