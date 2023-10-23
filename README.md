@@ -40,7 +40,7 @@ To begin, I seeded each team based on their home region and tier. While traditio
 
 The Elo Algorithm used in this project is as follows:
 
--- EAfter = Ebefore + I \* (W - Wexpected) \* R
+- EAfter = Ebefore + I \* (W - Wexpected) \* R
 
 
 EAfter = Elo points after match
