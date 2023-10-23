@@ -42,6 +42,7 @@ The Elo Algorithm used in this project is as follows:
 
 EAfter = Ebefore + I \* (W - Wexpected) \* R
 
+
 EAfter = Elo points after match
 
 EBefore = Elo points before match
