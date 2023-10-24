@@ -1,5 +1,7 @@
 # lolpowerrankings
 League of Legends Global Power Rankings Repository
+Latest & Up to Date Documentation can be found here
+https://docs.google.com/document/d/1R04xwjGrAHSyH_2dTmpHvPPv_nTsXWBl8BEuwE3yre4/edit 
 
 # Usage-
 
