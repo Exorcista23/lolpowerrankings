@@ -1,6 +1,11 @@
 # lolpowerrankings
 League of Legends Global Power Rankings Repository
 
+# Usage-
+
+To Run this project, clone the repository to your machine. Run the elo.ipynb notebook within the repository. Inputs that can be changed are found inside the second cell from the top. Please format your inputs as 
+a string of comma separated tournament ids or comma separated team ids. 
+
 # Description -
 
 In this project, I aimed to create a LoL Global Power Rankings for teams based on their match history according to an elo-based algorithm, taking into account strength of competition and recent performance.
