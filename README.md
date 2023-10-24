@@ -1,7 +1,5 @@
 # lolpowerrankings
 League of Legends Global Power Rankings Repository
-Latest & Up to Date Documentation can be found here
-https://docs.google.com/document/d/1R04xwjGrAHSyH_2dTmpHvPPv_nTsXWBl8BEuwE3yre4/edit 
 
 # Usage-
 
@@ -11,6 +9,8 @@ a string of comma separated tournament ids or comma separated team ids.
 # Description -
 
 In this project, I aimed to create a LoL Global Power Rankings for teams based on their match history according to an elo-based algorithm, taking into account strength of competition and recent performance.
+Latest & Up to Date Documentation can be found here
+https://docs.google.com/document/d/1R04xwjGrAHSyH_2dTmpHvPPv_nTsXWBl8BEuwE3yre4/edit 
 
 # Game Data -
 
