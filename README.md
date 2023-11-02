@@ -45,6 +45,17 @@ To begin, I seeded each team based on their home region and tier. While traditio
 | Regions | LPL, LCK | LEC, LCS | Rest |
 | Seed Elo | 1500 | 1250 | 1000 |
 
+I then adjusted each team's starting elo based on their average laning performances relative to the rest of their region. For each standard deviation that a team's performance deviated from their region's mean performance, I gave or took away 20 Elo, which was then weighted against the relative importance of each stat(based on how much information each stat provides in a machine learning predictive model that attempts to predict which team will win based on their laning stats). This is then capped to prevent edge cases where a team may gain a high amount of elo.
+
+That weighting table can be found here
+
+||Gold Lead|Gold Acquired|Team Deaths|Team Dragons|Team Kills|
+| --- | --- | --- | --- | --- |
+|Weighting|0.57|0.24|0.08|0.06|0.06|
+|Max Change|50|50|30|30|30|
+
+For example, if Gen.G averages a gold lead twice as large as the standard deviation, then they would gain 20 * 2 * 0.57 = 22.8 initial seeding elo points. 
+
 The Elo Algorithm used in this project is as follows:
 
 - EAfter = Ebefore + I \* (W - Wexpected) \* R
